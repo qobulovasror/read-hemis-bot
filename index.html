@@ -1,0 +1,1162 @@
+    <!DOCTYPE html>
+    <html lang="uz-UZ">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name='robots' content='noindex,follow' />
+        <meta name="csrf-param" content="_csrf-frontend">
+<meta name="csrf-token" content="8eHTnDtqJawjgVtgbo_LLZUqFtyShP9H_xeN59uZUsubtqfLDxhcz2D4IjU57Ph3pl4mpcepzyuTcbyNgekH_g==">
+        <title>O&#039;zlashtirish | HEMIS Student axborot tizimi</title>
+                <link href="/assets/56d1e3dc/themes/smoothness/jquery-ui.css?v=1474004875" rel="stylesheet">
+<link href="/assets/1619872/css/bootstrap.css?v=1550073338" rel="stylesheet">
+<link href="/assets/9e70574f/chosen_v1.4.0/chosen.min.css?v=1598298673" rel="stylesheet">
+<link href="/assets/9e70574f/components-font-awesome/css/font-awesome.min.css?v=1401044116" rel="stylesheet">
+<link href="/assets/a2bc6c6f/css/font-awesome.min.css?v=1477324374" rel="stylesheet">
+<link href="/assets/7ea02d8/plugins/iCheck/flat/blue.css?v=1567066820" rel="stylesheet">
+<link href="/assets/7ea02d8/dist/css/AdminLTE.min.css?v=1567066820" rel="stylesheet">
+<link href="/assets/7ea02d8/dist/css/skins/skin-blue.min.css?v=1567066820" rel="stylesheet">
+<link href="/assets/e3719058/src/0.1.4/css/checkBo.min.css?v=1465721329" rel="stylesheet">
+<link href="/assets/59c3df43/toastr.min.css?v=1439176619" rel="stylesheet">
+<link href="/assets/b7ece56d/css/style.css?v=1667493180" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic" rel="stylesheet">
+<link href="/assets/78290ccb/css/front.css?v=1676706624" rel="stylesheet">
+<script>var globalMessages={"deleteItem":"Haqiqatan o‘chirmoqchimisiz?"};</script>    </head>
+    <body class="sidebar-mini skin-blue ">
+            <div class="wrapper">
+
+        
+<div id="modal" class="fade modal" role="dialog" tabindex="-1">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+<div id="modalHeader" class="modal-header" style="opacity:1.00;">
+<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+Guruh jadvali ma’lumotlari
+</div>
+<div class="modal-body">
+<div id='modalContent'></div>
+</div>
+
+</div>
+</div>
+</div>    <header class="main-header">
+
+        <a class="logo" href="/"><span class="logo-lg">HEMIS Student</span></a>
+        <nav class="navbar navbar-static-top" role="navigation">
+
+            <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
+                <span class="sr-only">Toggle navigation</span>
+            </a>
+
+            <div class="navbar-custom-menu">
+
+                <ul class="nav navbar-nav">
+                                        <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            O‘zbekcha                        </a>
+                        <ul class="dropdown-menu">
+                                                                                            <li>
+                                    <a href="/education/performance">
+                                        O‘zbekcha                                    </a>
+                                </li>
+                                                                                            <li>
+                                    <a href="/oz/education/performance">
+                                        Ўзбекча                                    </a>
+                                </li>
+                                                                                            <li>
+                                    <a href="/ru/education/performance">
+                                        Русский                                    </a>
+                                </li>
+                                                                                            <li>
+                                    <a href="/en/education/performance">
+                                        English                                    </a>
+                                </li>
+                                                                                                                            <li>
+                                    <a href="/tg/education/performance">
+                                        Тоҷикӣ                                    </a>
+                                </li>
+                                                                                                                                                    </ul>
+                    </li>
+                    <!-- <li>
+                    <a href="">
+                        <i class="fa fa-refresh"></i>
+                    </a>
+                </li>-->
+                    <li class="dropdown notifications-menu">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            <i class="fa fa-bell-o"></i>
+                            <span class="label label-warning">0</span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <ul class="menu">
+                                                                    </ul>
+                            </li>
+                            <li class="footer">
+                                <a href="/message/my-messages">Barchasini ko‘rish</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown  user-menu">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            <img src="https://hemis.samdu.uz/static/crop/3/6/120_120_90_3663974624.jpg" class="user-image"
+                                 alt="Asror Qobulov"/>
+                            <span class="user-name">QOBULOV A. R.</span>
+                            <span class="user-role">RT_2020_06-guruh</span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="/dashboard/profile">Profil</a>                            </li>
+                            <li>
+                                <a href="/student/personal-data">Shaxsiy ma'lumotlarim</a>                            </li>
+                            <li role="separator" class="divider"></li>
+                            <li>
+                                <a href="/dashboard/logout"><i class='fa fa-sign-out'></i> Chiqish</a>                            </li>
+                        </ul>
+
+
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    
+        <aside class="main-sidebar">
+    <section class="sidebar">
+        <ul class="sidebar-menu tree" data-widget="tree">
+                                            <li class="treeview menu-open">
+                    <a href="/education/time-table">
+                        <i class="fa fa-book"></i> <span>O'quv reja</span>
+                        <span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span>
+                    </a>
+                    <ul class='treeview-menu' style="display:block">
+                                                    <li class="">
+                                <a href="/education/curriculum">
+                                    <i class="fa fa-circle-o"></i>
+                                    <span>O'quv reja</span>
+                                </a>
+                            </li>
+                                                    <li class="">
+                                <a href="/education/time-table">
+                                    <i class="fa fa-circle-o"></i>
+                                    <span>Dars jadvali</span>
+                                </a>
+                            </li>
+                                                    <li class="">
+                                <a href="/education/exam-table">
+                                    <i class="fa fa-circle-o"></i>
+                                    <span>Nazorat jadvali</span>
+                                </a>
+                            </li>
+                                                    <li class="">
+                                <a href="/education/subjects">
+                                    <i class="fa fa-circle-o"></i>
+                                    <span>Fanlar resurslari</span>
+                                </a>
+                            </li>
+                                                    <li class="">
+                                <a href="/education/attendance">
+                                    <i class="fa fa-circle-o"></i>
+                                    <span>Davomat</span>
+                                </a>
+                            </li>
+                                                    <li class="active">
+                                <a href="/education/performance">
+                                    <i class="fa fa-circle"></i>
+                                    <span>O'zlashtirish</span>
+                                </a>
+                            </li>
+                                                    <li class="">
+                                <a href="/test/exams">
+                                    <i class="fa fa-circle-o"></i>
+                                    <span>Imtihonlar</span>
+                                </a>
+                            </li>
+                                                    <li class="">
+                                <a href="/education/academic-data">
+                                    <i class="fa fa-circle-o"></i>
+                                    <span>Reyting daftarcha</span>
+                                </a>
+                            </li>
+                                                    <li class="">
+                                <a href="/education/subject-choose">
+                                    <i class="fa fa-circle-o"></i>
+                                    <span>Fan tanlovi</span>
+                                </a>
+                            </li>
+                                            </ul>
+                </li>
+                                            <li class="treeview ">
+                    <a href="/retraining/application">
+                        <i class="fa fa-book"></i> <span>Qayta o'qish</span>
+                        <span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span>
+                    </a>
+                    <ul class='treeview-menu' >
+                                                    <li class="">
+                                <a href="/retraining/application">
+                                    <i class="fa fa-circle-o"></i>
+                                    <span>Ariza qayta o'qish</span>
+                                </a>
+                            </li>
+                                                    <li class="">
+                                <a href="/retraining/time-table">
+                                    <i class="fa fa-circle-o"></i>
+                                    <span>Q.O'qish mashg'ulotlari</span>
+                                </a>
+                            </li>
+                                                    <li class="">
+                                <a href="/retraining/exam-table">
+                                    <i class="fa fa-circle-o"></i>
+                                    <span>Q.O'qish nazorat jadvali</span>
+                                </a>
+                            </li>
+                                                    <li class="">
+                                <a href="/retraining/performance">
+                                    <i class="fa fa-circle-o"></i>
+                                    <span>Q.O'qish o'zlashtirish</span>
+                                </a>
+                            </li>
+                                            </ul>
+                </li>
+                                            <li class="treeview ">
+                    <a href="/student/decree">
+                        <i class="fa fa-user"></i> <span>Talaba ma'lumoti</span>
+                        <span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span>
+                    </a>
+                    <ul class='treeview-menu' >
+                                                    <li class="">
+                                <a href="/student/decree">
+                                    <i class="fa fa-circle-o"></i>
+                                    <span>Buyruqlar</span>
+                                </a>
+                            </li>
+                                                    <li class="">
+                                <a href="/student/contract">
+                                    <i class="fa fa-circle-o"></i>
+                                    <span>Shartnomalar</span>
+                                </a>
+                            </li>
+                                                    <li class="">
+                                <a href="/student/reference">
+                                    <i class="fa fa-circle-o"></i>
+                                    <span>Ma'lumotnomalar</span>
+                                </a>
+                            </li>
+                                                    <li class="">
+                                <a href="/student/document">
+                                    <i class="fa fa-circle-o"></i>
+                                    <span>Talaba hujjati</span>
+                                </a>
+                            </li>
+                                                    <li class="">
+                                <a href="/student/circulation-sheet">
+                                    <i class="fa fa-circle-o"></i>
+                                    <span>Bitiruv varaqa</span>
+                                </a>
+                            </li>
+                                                    <li class="">
+                                <a href="/student/personal-data">
+                                    <i class="fa fa-circle-o"></i>
+                                    <span>Shaxsiy ma'lumotlar</span>
+                                </a>
+                            </li>
+                                                    <li class="">
+                                <a href="/student/graduate-qualifying">
+                                    <i class="fa fa-circle-o"></i>
+                                    <span>Bitiruv ishi</span>
+                                </a>
+                            </li>
+                                            </ul>
+                </li>
+                                            <li class="treeview ">
+                    <a href="/message/my-messages">
+                        <i class="fa fa-envelope"></i> <span>Xabarlar</span>
+                        <span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span>
+                    </a>
+                    <ul class='treeview-menu' >
+                                                    <li class="">
+                                <a href="/message/my-messages">
+                                    <i class="fa fa-circle-o"></i>
+                                    <span>Mening xabarlarim</span>
+                                </a>
+                            </li>
+                                                    <li class="">
+                                <a href="/message/compose">
+                                    <i class="fa fa-circle-o"></i>
+                                    <span>Xabar yaratish</span>
+                                </a>
+                            </li>
+                                            </ul>
+                </li>
+                                            <li class="treeview ">
+                    <a href="/dashboard/profile">
+                        <i class="fa fa-gear"></i> <span>Tizim</span>
+                        <span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span>
+                    </a>
+                    <ul class='treeview-menu' >
+                                                    <li class="">
+                                <a href="/dashboard/profile">
+                                    <i class="fa fa-circle-o"></i>
+                                    <span>Profil</span>
+                                </a>
+                            </li>
+                                                    <li class="">
+                                <a href="/dashboard/logins">
+                                    <i class="fa fa-circle-o"></i>
+                                    <span>Kirish tarixi</span>
+                                </a>
+                            </li>
+                                            </ul>
+                </li>
+                        <li class="">
+                <a href="https://unilibrary.uz/" target="_blank">
+                    <i class="fa fa-book"></i> <span>Elektron kutubxona</span>
+                </a>
+            </li>
+        </ul>
+    </section>
+</aside>
+
+        <div class="content-wrapper">
+    <section class="content">
+        
+<div id="admin-grid" data-pjax-container=""><div class="info-box box-mini">
+    <div class="row">
+        <div class="col-sm-6">
+            <span class="info-box-icon bg-green"><i class="fa fa-files-o"></i></span>
+            <div class="info-box-content ">
+
+                <span class="info-box-number">
+                        RT_2020_06-guruh                                    </span>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="info-box-content no-margin text-right text-center-sm">
+                <label class="hidden visible-xs plabel">Semestr</label>
+                <ul class="pagination pagination-sm psemester ">
+                    <li class=" hidden-xs"><a href="#" class="plabel">Semestr</a></li>
+                                            <li class="">
+                            <a href="/education/performance?semester=11">1</a>
+                        </li>
+                                            <li class="">
+                            <a href="/education/performance?semester=12">2</a>
+                        </li>
+                                            <li class="">
+                            <a href="/education/performance?semester=13">3</a>
+                        </li>
+                                            <li class="">
+                            <a href="/education/performance?semester=14">4</a>
+                        </li>
+                                            <li class="">
+                            <a href="/education/performance?semester=15">5</a>
+                        </li>
+                                            <li class="active">
+                            <a href="/education/performance?semester=16">6</a>
+                        </li>
+                                            <li class="">
+                            <a href="/education/performance?semester=17">7</a>
+                        </li>
+                                            <li class="">
+                            <a href="/education/performance?semester=18">8</a>
+                        </li>
+                                    </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <div class="box box-success collapsed-box">
+        <div class="box-header with-border">
+            <h3 class="box-title ">1-semestr</h3>
+            <div class="box-tools pull-right">
+                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i
+                            class="fa fa-plus"></i>
+                </button>
+            </div>
+        </div>
+        <div class="box-body no-padding">
+            <table class="table table-striped">
+                <thead>
+                                <tr>
+                    <th width="50px"></th>
+                    <th width="50%">Fanlar</th>
+                    <th>JN</th>
+                    <th>ON</th>
+                    <th>YN</th>
+                    <th>Umumiy</th>
+                </tr>
+                </thead>
+                <tbody>
+
+                                                    <tr>
+                        <td>1</td>
+                        <td>Matematika</td>
+                                                    <td>
+                                                                                                    0                                
+                                <a class="showModalButton" value="/education/performance?subject=1&amp;semester=11&amp;type=11&amp;detail=1" href="#" title="Kunlik baholash" modal-class="modal-small" data-pjax="1"><i class="fa fa-eye-slash"></i></a>                            </td>
+                            <td>
+                                                                                                    0                                                                <a class="showModalButton" value="/education/performance?subject=1&amp;semester=11&amp;type=12&amp;detail=1" href="#" title="Kunlik baholash" modal-class="modal-small" data-pjax="1"><i class="fa fa-eye-slash"></i></a>                            </td>
+                            <td></td>
+                            <td>63.0</td>
+                        
+                        
+                                            </tr>
+                                    <tr>
+                        <td>3</td>
+                        <td>O'zbekistonning yangi tarixi</td>
+                                                    <td>
+                                                                                                    0                                
+                                <a class="showModalButton" value="/education/performance?subject=2&amp;semester=11&amp;type=11&amp;detail=1" href="#" title="Kunlik baholash" modal-class="modal-small" data-pjax="1"><i class="fa fa-eye-slash"></i></a>                            </td>
+                            <td>
+                                                                                                    0                                                                <a class="showModalButton" value="/education/performance?subject=2&amp;semester=11&amp;type=12&amp;detail=1" href="#" title="Kunlik baholash" modal-class="modal-small" data-pjax="1"><i class="fa fa-eye-slash"></i></a>                            </td>
+                            <td></td>
+                            <td>85.0</td>
+                        
+                        
+                                            </tr>
+                                    <tr>
+                        <td>5</td>
+                        <td>O'zbek tilining sohada qo'llanilishi</td>
+                                                    <td>
+                                                                                                    0                                
+                                <a class="showModalButton" value="/education/performance?subject=5&amp;semester=11&amp;type=11&amp;detail=1" href="#" title="Kunlik baholash" modal-class="modal-small" data-pjax="1"><i class="fa fa-eye-slash"></i></a>                            </td>
+                            <td>
+                                                                                                    0                                                                <a class="showModalButton" value="/education/performance?subject=5&amp;semester=11&amp;type=12&amp;detail=1" href="#" title="Kunlik baholash" modal-class="modal-small" data-pjax="1"><i class="fa fa-eye-slash"></i></a>                            </td>
+                            <td></td>
+                            <td>84.0</td>
+                        
+                        
+                                            </tr>
+                                    <tr>
+                        <td>7</td>
+                        <td>Jismoniy tarbiya va sport</td>
+                                                    <td>
+                                                                                                    0                                
+                                <a class="showModalButton" value="/education/performance?subject=6&amp;semester=11&amp;type=11&amp;detail=1" href="#" title="Kunlik baholash" modal-class="modal-small" data-pjax="1"><i class="fa fa-eye-slash"></i></a>                            </td>
+                            <td>
+                                                                                                    0                                                                <a class="showModalButton" value="/education/performance?subject=6&amp;semester=11&amp;type=12&amp;detail=1" href="#" title="Kunlik baholash" modal-class="modal-small" data-pjax="1"><i class="fa fa-eye-slash"></i></a>                            </td>
+                            <td></td>
+                            <td>86.0</td>
+                        
+                        
+                                            </tr>
+                                    <tr>
+                        <td>9</td>
+                        <td>Xorijiy til</td>
+                                                    <td>
+                                                                                                    0                                
+                                <a class="showModalButton" value="/education/performance?subject=37&amp;semester=11&amp;type=11&amp;detail=1" href="#" title="Kunlik baholash" modal-class="modal-small" data-pjax="1"><i class="fa fa-eye-slash"></i></a>                            </td>
+                            <td>
+                                                                                                    0                                                                <a class="showModalButton" value="/education/performance?subject=37&amp;semester=11&amp;type=12&amp;detail=1" href="#" title="Kunlik baholash" modal-class="modal-small" data-pjax="1"><i class="fa fa-eye-slash"></i></a>                            </td>
+                            <td></td>
+                            <td>79.0</td>
+                        
+                        
+                                            </tr>
+                                    <tr>
+                        <td>11</td>
+                        <td>Rus tili (o`zbek guruhlar uchun)</td>
+                                                    <td>
+                                                                                                    0                                
+                                <a class="showModalButton" value="/education/performance?subject=531&amp;semester=11&amp;type=11&amp;detail=1" href="#" title="Kunlik baholash" modal-class="modal-small" data-pjax="1"><i class="fa fa-eye-slash"></i></a>                            </td>
+                            <td>
+                                                                                                    0                                                                <a class="showModalButton" value="/education/performance?subject=531&amp;semester=11&amp;type=12&amp;detail=1" href="#" title="Kunlik baholash" modal-class="modal-small" data-pjax="1"><i class="fa fa-eye-slash"></i></a>                            </td>
+                            <td></td>
+                            <td>75.0</td>
+                        
+                        
+                                            </tr>
+                                    <tr>
+                        <td>13</td>
+                        <td>Dasturlash asoslari</td>
+                                                    <td>
+                                                                                                    0                                
+                                <a class="showModalButton" value="/education/performance?subject=1260&amp;semester=11&amp;type=11&amp;detail=1" href="#" title="Kunlik baholash" modal-class="modal-small" data-pjax="1"><i class="fa fa-eye-slash"></i></a>                            </td>
+                            <td>
+                                                                                                    0                                                                <a class="showModalButton" value="/education/performance?subject=1260&amp;semester=11&amp;type=12&amp;detail=1" href="#" title="Kunlik baholash" modal-class="modal-small" data-pjax="1"><i class="fa fa-eye-slash"></i></a>                            </td>
+                            <td></td>
+                            <td>78.0</td>
+                        
+                        
+                                            </tr>
+                                    <tr>
+                        <td>15</td>
+                        <td>Diskret matematika va matematik mantiq</td>
+                                                    <td>
+                                                                                                    0                                
+                                <a class="showModalButton" value="/education/performance?subject=1262&amp;semester=11&amp;type=11&amp;detail=1" href="#" title="Kunlik baholash" modal-class="modal-small" data-pjax="1"><i class="fa fa-eye-slash"></i></a>                            </td>
+                            <td>
+                                                                                                    0                                                                <a class="showModalButton" value="/education/performance?subject=1262&amp;semester=11&amp;type=12&amp;detail=1" href="#" title="Kunlik baholash" modal-class="modal-small" data-pjax="1"><i class="fa fa-eye-slash"></i></a>                            </td>
+                            <td></td>
+                            <td>65.0</td>
+                        
+                        
+                                            </tr>
+                
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="box box-success collapsed-box">
+        <div class="box-header with-border">
+            <h3 class="box-title ">2-semestr</h3>
+            <div class="box-tools pull-right">
+                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i
+                            class="fa fa-plus"></i>
+                </button>
+            </div>
+        </div>
+        <div class="box-body no-padding">
+            <table class="table table-striped">
+                <thead>
+                                <tr>
+                    <th width="50px"></th>
+                    <th width="50%">Fanlar</th>
+                    <th>JN</th>
+                    <th>ON</th>
+                    <th>YN</th>
+                    <th>Umumiy</th>
+                </tr>
+                </thead>
+                <tbody>
+
+                                                    <tr>
+                        <td>1</td>
+                        <td>Jismoniy tarbiya va sport</td>
+                                                    <td>
+                                                                                                    0                                
+                                <a class="showModalButton" value="/education/performance?subject=6&amp;semester=12&amp;type=11&amp;detail=1" href="#" title="Kunlik baholash" modal-class="modal-small" data-pjax="1"><i class="fa fa-eye-slash"></i></a>                            </td>
+                            <td>
+                                                                                                    0                                                                <a class="showModalButton" value="/education/performance?subject=6&amp;semester=12&amp;type=12&amp;detail=1" href="#" title="Kunlik baholash" modal-class="modal-small" data-pjax="1"><i class="fa fa-eye-slash"></i></a>                            </td>
+                            <td></td>
+                            <td>74.0</td>
+                        
+                        
+                                            </tr>
+                                    <tr>
+                        <td>3</td>
+                        <td>Xorijiy til</td>
+                                                    <td>
+                                                                                                    0                                
+                                <a class="showModalButton" value="/education/performance?subject=37&amp;semester=12&amp;type=11&amp;detail=1" href="#" title="Kunlik baholash" modal-class="modal-small" data-pjax="1"><i class="fa fa-eye-slash"></i></a>                            </td>
+                            <td>
+                                                                                                    0                                                                <a class="showModalButton" value="/education/performance?subject=37&amp;semester=12&amp;type=12&amp;detail=1" href="#" title="Kunlik baholash" modal-class="modal-small" data-pjax="1"><i class="fa fa-eye-slash"></i></a>                            </td>
+                            <td></td>
+                            <td>74.0</td>
+                        
+                        
+                                            </tr>
+                                    <tr>
+                        <td>5</td>
+                        <td>Ekologiya va atrof muhit muhofazasi</td>
+                                                    <td>
+                                                                                                    0                                
+                                <a class="showModalButton" value="/education/performance?subject=43&amp;semester=12&amp;type=11&amp;detail=1" href="#" title="Kunlik baholash" modal-class="modal-small" data-pjax="1"><i class="fa fa-eye-slash"></i></a>                            </td>
+                            <td>
+                                                                                                    0                                                                <a class="showModalButton" value="/education/performance?subject=43&amp;semester=12&amp;type=12&amp;detail=1" href="#" title="Kunlik baholash" modal-class="modal-small" data-pjax="1"><i class="fa fa-eye-slash"></i></a>                            </td>
+                            <td></td>
+                            <td>62.0</td>
+                        
+                        
+                                            </tr>
+                                    <tr>
+                        <td>7</td>
+                        <td>Informatika</td>
+                                                    <td>
+                                                                                                    0                                
+                                <a class="showModalButton" value="/education/performance?subject=1259&amp;semester=12&amp;type=11&amp;detail=1" href="#" title="Kunlik baholash" modal-class="modal-small" data-pjax="1"><i class="fa fa-eye-slash"></i></a>                            </td>
+                            <td>
+                                                                                                    0                                                                <a class="showModalButton" value="/education/performance?subject=1259&amp;semester=12&amp;type=12&amp;detail=1" href="#" title="Kunlik baholash" modal-class="modal-small" data-pjax="1"><i class="fa fa-eye-slash"></i></a>                            </td>
+                            <td></td>
+                            <td>88.0</td>
+                        
+                        
+                                            </tr>
+                                    <tr>
+                        <td>9</td>
+                        <td>Dasturlash asoslari</td>
+                                                    <td>
+                                                                                                    0                                
+                                <a class="showModalButton" value="/education/performance?subject=1260&amp;semester=12&amp;type=11&amp;detail=1" href="#" title="Kunlik baholash" modal-class="modal-small" data-pjax="1"><i class="fa fa-eye-slash"></i></a>                            </td>
+                            <td>
+                                                                                                    0                                                                <a class="showModalButton" value="/education/performance?subject=1260&amp;semester=12&amp;type=12&amp;detail=1" href="#" title="Kunlik baholash" modal-class="modal-small" data-pjax="1"><i class="fa fa-eye-slash"></i></a>                            </td>
+                            <td></td>
+                            <td>87.0</td>
+                        
+                        
+                                            </tr>
+                                    <tr>
+                        <td>11</td>
+                        <td>Algoritmlar va berilganlar  strukturalari</td>
+                                                    <td>
+                                                                                                    0                                
+                                <a class="showModalButton" value="/education/performance?subject=1261&amp;semester=12&amp;type=11&amp;detail=1" href="#" title="Kunlik baholash" modal-class="modal-small" data-pjax="1"><i class="fa fa-eye-slash"></i></a>                            </td>
+                            <td>
+                                                                                                    0                                                                <a class="showModalButton" value="/education/performance?subject=1261&amp;semester=12&amp;type=12&amp;detail=1" href="#" title="Kunlik baholash" modal-class="modal-small" data-pjax="1"><i class="fa fa-eye-slash"></i></a>                            </td>
+                            <td></td>
+                            <td>85.0</td>
+                        
+                        
+                                            </tr>
+                                    <tr>
+                        <td>13</td>
+                        <td>Diskret matematika va matematik mantiq</td>
+                                                    <td>
+                                                                                                    0                                
+                                <a class="showModalButton" value="/education/performance?subject=1262&amp;semester=12&amp;type=11&amp;detail=1" href="#" title="Kunlik baholash" modal-class="modal-small" data-pjax="1"><i class="fa fa-eye-slash"></i></a>                            </td>
+                            <td>
+                                                                                                    0                                                                <a class="showModalButton" value="/education/performance?subject=1262&amp;semester=12&amp;type=12&amp;detail=1" href="#" title="Kunlik baholash" modal-class="modal-small" data-pjax="1"><i class="fa fa-eye-slash"></i></a>                            </td>
+                            <td></td>
+                            <td>74.0</td>
+                        
+                        
+                                            </tr>
+                                    <tr>
+                        <td>15</td>
+                        <td>Rus tili (o'zbek guruhlari uchun)</td>
+                                                    <td>
+                                                                                                    0                                
+                                <a class="showModalButton" value="/education/performance?subject=1446&amp;semester=12&amp;type=11&amp;detail=1" href="#" title="Kunlik baholash" modal-class="modal-small" data-pjax="1"><i class="fa fa-eye-slash"></i></a>                            </td>
+                            <td>
+                                                                                                    0                                                                <a class="showModalButton" value="/education/performance?subject=1446&amp;semester=12&amp;type=12&amp;detail=1" href="#" title="Kunlik baholash" modal-class="modal-small" data-pjax="1"><i class="fa fa-eye-slash"></i></a>                            </td>
+                            <td></td>
+                            <td>62.0</td>
+                        
+                        
+                                            </tr>
+                
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="box box-success collapsed-box">
+        <div class="box-header with-border">
+            <h3 class="box-title ">3-semestr</h3>
+            <div class="box-tools pull-right">
+                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i
+                            class="fa fa-plus"></i>
+                </button>
+            </div>
+        </div>
+        <div class="box-body no-padding">
+            <table class="table table-striped">
+                <thead>
+                                <tr>
+                    <th width="50px"></th>
+                    <th width="50%">Fanlar</th>
+                    <th>JN</th>
+                    <th>ON</th>
+                    <th>YN</th>
+                    <th>Umumiy</th>
+                </tr>
+                </thead>
+                <tbody>
+
+                                                    <tr>
+                        <td>1</td>
+                        <td>Dasturlash asoslari</td>
+                                                    <td>
+                                                                                                    0                                
+                                <a class="showModalButton" value="/education/performance?subject=1260&amp;semester=13&amp;type=11&amp;detail=1" href="#" title="Kunlik baholash" modal-class="modal-small" data-pjax="1"><i class="fa fa-eye-slash"></i></a>                            </td>
+                            <td>
+                                                                                                    0                                                                <a class="showModalButton" value="/education/performance?subject=1260&amp;semester=13&amp;type=12&amp;detail=1" href="#" title="Kunlik baholash" modal-class="modal-small" data-pjax="1"><i class="fa fa-eye-slash"></i></a>                            </td>
+                            <td></td>
+                            <td>86.0</td>
+                        
+                        
+                                            </tr>
+                                    <tr>
+                        <td>3</td>
+                        <td>Diskret matematika va matematik mantiq</td>
+                                                    <td>
+                                                                                                    0                                
+                                <a class="showModalButton" value="/education/performance?subject=1262&amp;semester=13&amp;type=11&amp;detail=1" href="#" title="Kunlik baholash" modal-class="modal-small" data-pjax="1"><i class="fa fa-eye-slash"></i></a>                            </td>
+                            <td>
+                                                                                                    0                                                                <a class="showModalButton" value="/education/performance?subject=1262&amp;semester=13&amp;type=12&amp;detail=1" href="#" title="Kunlik baholash" modal-class="modal-small" data-pjax="1"><i class="fa fa-eye-slash"></i></a>                            </td>
+                            <td></td>
+                            <td>70.0</td>
+                        
+                        
+                                            </tr>
+                                    <tr>
+                        <td>5</td>
+                        <td>Amaliy informatika</td>
+                                                    <td>
+                                                                                                    0                                
+                                <a class="showModalButton" value="/education/performance?subject=4949&amp;semester=13&amp;type=11&amp;detail=1" href="#" title="Kunlik baholash" modal-class="modal-small" data-pjax="1"><i class="fa fa-eye-slash"></i></a>                            </td>
+                            <td>
+                                                                                                    0                                                                <a class="showModalButton" value="/education/performance?subject=4949&amp;semester=13&amp;type=12&amp;detail=1" href="#" title="Kunlik baholash" modal-class="modal-small" data-pjax="1"><i class="fa fa-eye-slash"></i></a>                            </td>
+                            <td></td>
+                            <td>70.0</td>
+                        
+                        
+                                            </tr>
+                                    <tr>
+                        <td>7</td>
+                        <td>Linux operasion tizimida administratorlik</td>
+                                                    <td>
+                                                                                                    0                                
+                                <a class="showModalButton" value="/education/performance?subject=5085&amp;semester=13&amp;type=11&amp;detail=1" href="#" title="Kunlik baholash" modal-class="modal-small" data-pjax="1"><i class="fa fa-eye-slash"></i></a>                            </td>
+                            <td>
+                                                                                                    0                                                                <a class="showModalButton" value="/education/performance?subject=5085&amp;semester=13&amp;type=12&amp;detail=1" href="#" title="Kunlik baholash" modal-class="modal-small" data-pjax="1"><i class="fa fa-eye-slash"></i></a>                            </td>
+                            <td></td>
+                            <td>69.0</td>
+                        
+                        
+                                            </tr>
+                                    <tr>
+                        <td>9</td>
+                        <td>Ma'lumotlar bazalari</td>
+                                                    <td>
+                                                                                                    0                                
+                                <a class="showModalButton" value="/education/performance?subject=5093&amp;semester=13&amp;type=11&amp;detail=1" href="#" title="Kunlik baholash" modal-class="modal-small" data-pjax="1"><i class="fa fa-eye-slash"></i></a>                            </td>
+                            <td>
+                                                                                                    0                                                                <a class="showModalButton" value="/education/performance?subject=5093&amp;semester=13&amp;type=12&amp;detail=1" href="#" title="Kunlik baholash" modal-class="modal-small" data-pjax="1"><i class="fa fa-eye-slash"></i></a>                            </td>
+                            <td></td>
+                            <td>96.0</td>
+                        
+                        
+                                            </tr>
+                                    <tr>
+                        <td>11</td>
+                        <td>Python dasturlash tili va kutubxonalari</td>
+                                                    <td>
+                                                                                                    0                                
+                                <a class="showModalButton" value="/education/performance?subject=5164&amp;semester=13&amp;type=11&amp;detail=1" href="#" title="Kunlik baholash" modal-class="modal-small" data-pjax="1"><i class="fa fa-eye-slash"></i></a>                            </td>
+                            <td>
+                                                                                                    0                                                                <a class="showModalButton" value="/education/performance?subject=5164&amp;semester=13&amp;type=12&amp;detail=1" href="#" title="Kunlik baholash" modal-class="modal-small" data-pjax="1"><i class="fa fa-eye-slash"></i></a>                            </td>
+                            <td></td>
+                            <td>69.0</td>
+                        
+                        
+                                            </tr>
+                                    <tr>
+                        <td>13</td>
+                        <td>Parallel dasturlash</td>
+                                                    <td>
+                                                                                                    0                                
+                                <a class="showModalButton" value="/education/performance?subject=6438&amp;semester=13&amp;type=11&amp;detail=1" href="#" title="Kunlik baholash" modal-class="modal-small" data-pjax="1"><i class="fa fa-eye-slash"></i></a>                            </td>
+                            <td>
+                                                                                                    0                                                                <a class="showModalButton" value="/education/performance?subject=6438&amp;semester=13&amp;type=12&amp;detail=1" href="#" title="Kunlik baholash" modal-class="modal-small" data-pjax="1"><i class="fa fa-eye-slash"></i></a>                            </td>
+                            <td></td>
+                            <td>87.0</td>
+                        
+                        
+                                            </tr>
+                
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="box box-success collapsed-box">
+        <div class="box-header with-border">
+            <h3 class="box-title ">4-semestr</h3>
+            <div class="box-tools pull-right">
+                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i
+                            class="fa fa-plus"></i>
+                </button>
+            </div>
+        </div>
+        <div class="box-body no-padding">
+            <table class="table table-striped">
+                <thead>
+                                <tr>
+                    <th width="50px"></th>
+                    <th width="50%">Fanlar</th>
+                    <th>JN</th>
+                    <th>ON</th>
+                    <th>YN</th>
+                    <th>Umumiy</th>
+                </tr>
+                </thead>
+                <tbody>
+
+                                                    <tr>
+                        <td>1</td>
+                        <td>Nemis tili</td>
+                                                    <td>
+                                                                                                    18.0                                
+                                <a class="showModalButton" value="/education/performance?subject=1094&amp;semester=14&amp;type=11&amp;detail=1" href="#" title="Kunlik baholash" modal-class="modal-small" data-pjax="1"><i class="fa fa-eye-slash"></i></a>                            </td>
+                            <td>
+                                                                                                    17.0                                                                <a class="showModalButton" value="/education/performance?subject=1094&amp;semester=14&amp;type=12&amp;detail=1" href="#" title="Kunlik baholash" modal-class="modal-small" data-pjax="1"><i class="fa fa-eye-slash"></i></a>                            </td>
+                            <td>53.0</td>
+                            <td>88.0</td>
+                        
+                        
+                                            </tr>
+                                    <tr>
+                        <td>3</td>
+                        <td>Dasturlash asoslari</td>
+                                                    <td>
+                                
+                                                                    17.0                                                                <a class="showModalButton" value="/education/performance?subject=1260&amp;semester=14&amp;type=11&amp;detail=1" href="#" title="Kunlik baholash" modal-class="modal-small" data-pjax="1"><i class="fa fa-eye-slash"></i></a>                            </td>
+                            <td>
+                                                                                                    18.0                                                                <a class="showModalButton" value="/education/performance?subject=1260&amp;semester=14&amp;type=12&amp;detail=1" href="#" title="Kunlik baholash" modal-class="modal-small" data-pjax="1"><i class="fa fa-eye-slash"></i></a>                            </td>
+                            <td>45.0</td>
+                            <td>80.0</td>
+                        
+                        
+                                            </tr>
+                                    <tr>
+                        <td>5</td>
+                        <td>Axborot tizimlari</td>
+                                                    <td>
+                                                                                                    14.0                                
+                                <a class="showModalButton" value="/education/performance?subject=4980&amp;semester=14&amp;type=11&amp;detail=1" href="#" title="Kunlik baholash" modal-class="modal-small" data-pjax="1"><i class="fa fa-eye-slash"></i></a>                            </td>
+                            <td>
+                                                                                                    10.0                                                                <a class="showModalButton" value="/education/performance?subject=4980&amp;semester=14&amp;type=12&amp;detail=1" href="#" title="Kunlik baholash" modal-class="modal-small" data-pjax="1"><i class="fa fa-eye-slash"></i></a>                            </td>
+                            <td>38.0</td>
+                            <td>62.0</td>
+                        
+                        
+                                            </tr>
+                                    <tr>
+                        <td>7</td>
+                        <td>Kompyuter grafikasi va geometriyasi</td>
+                                                    <td>
+                                                                                                    15.0                                
+                                <a class="showModalButton" value="/education/performance?subject=5061&amp;semester=14&amp;type=11&amp;detail=1" href="#" title="Kunlik baholash" modal-class="modal-small" data-pjax="1"><i class="fa fa-eye-slash"></i></a>                            </td>
+                            <td>
+                                                                                                    13.0                                                                <a class="showModalButton" value="/education/performance?subject=5061&amp;semester=14&amp;type=12&amp;detail=1" href="#" title="Kunlik baholash" modal-class="modal-small" data-pjax="1"><i class="fa fa-eye-slash"></i></a>                            </td>
+                            <td>57.0</td>
+                            <td>85.0</td>
+                        
+                        
+                                            </tr>
+                                    <tr>
+                        <td>9</td>
+                        <td>Kompyuter  tarmoqlari</td>
+                                                    <td>
+                                                                                                    14.0                                
+                                <a class="showModalButton" value="/education/performance?subject=5079&amp;semester=14&amp;type=11&amp;detail=1" href="#" title="Kunlik baholash" modal-class="modal-small" data-pjax="1"><i class="fa fa-eye-slash"></i></a>                            </td>
+                            <td>
+                                                                                                    14.0                                                                <a class="showModalButton" value="/education/performance?subject=5079&amp;semester=14&amp;type=12&amp;detail=1" href="#" title="Kunlik baholash" modal-class="modal-small" data-pjax="1"><i class="fa fa-eye-slash"></i></a>                            </td>
+                            <td>40.0</td>
+                            <td>68.0</td>
+                        
+                        
+                                            </tr>
+                                    <tr>
+                        <td>11</td>
+                        <td>Ma'lumotlar bazalari</td>
+                                                    <td>
+                                                                                                    17.0                                
+                                <a class="showModalButton" value="/education/performance?subject=5093&amp;semester=14&amp;type=11&amp;detail=1" href="#" title="Kunlik baholash" modal-class="modal-small" data-pjax="1"><i class="fa fa-eye-slash"></i></a>                            </td>
+                            <td>
+                                                                                                    18.0                                                                <a class="showModalButton" value="/education/performance?subject=5093&amp;semester=14&amp;type=12&amp;detail=1" href="#" title="Kunlik baholash" modal-class="modal-small" data-pjax="1"><i class="fa fa-eye-slash"></i></a>                            </td>
+                            <td>51.0</td>
+                            <td>86.0</td>
+                        
+                        
+                                            </tr>
+                                    <tr>
+                        <td>13</td>
+                        <td>Parallel dasturlash</td>
+                                                    <td>
+                                                                                                    18.0                                
+                                <a class="showModalButton" value="/education/performance?subject=6438&amp;semester=14&amp;type=11&amp;detail=1" href="#" title="Kunlik baholash" modal-class="modal-small" data-pjax="1"><i class="fa fa-eye-slash"></i></a>                            </td>
+                            <td>
+                                                                                                    18.0                                                                <a class="showModalButton" value="/education/performance?subject=6438&amp;semester=14&amp;type=12&amp;detail=1" href="#" title="Kunlik baholash" modal-class="modal-small" data-pjax="1"><i class="fa fa-eye-slash"></i></a>                            </td>
+                            <td>37.0</td>
+                            <td>73.0</td>
+                        
+                        
+                                            </tr>
+                
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="box box-success collapsed-box">
+        <div class="box-header with-border">
+            <h3 class="box-title ">5-semestr</h3>
+            <div class="box-tools pull-right">
+                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i
+                            class="fa fa-plus"></i>
+                </button>
+            </div>
+        </div>
+        <div class="box-body no-padding">
+            <table class="table table-striped">
+                <thead>
+                                <tr>
+                    <th width="50px"></th>
+                    <th width="50%">Fanlar</th>
+                    <th>JN</th>
+                    <th>ON</th>
+                    <th>YN</th>
+                    <th>Umumiy</th>
+                </tr>
+                </thead>
+                <tbody>
+
+                                                    <tr>
+                        <td>1</td>
+                        <td>Dasturlash asoslari</td>
+                                                    <td>
+                                                                                                    14.0                                
+                                <a class="showModalButton" value="/education/performance?subject=1260&amp;semester=15&amp;type=11&amp;detail=1" href="#" title="Kunlik baholash" modal-class="modal-small" data-pjax="1"><i class="fa fa-eye-slash"></i></a>                            </td>
+                            <td>
+                                                                                                    18.0                                                                <a class="showModalButton" value="/education/performance?subject=1260&amp;semester=15&amp;type=12&amp;detail=1" href="#" title="Kunlik baholash" modal-class="modal-small" data-pjax="1"><i class="fa fa-eye-slash"></i></a>                            </td>
+                            <td>45.0</td>
+                            <td>77.0</td>
+                        
+                        
+                                            </tr>
+                                    <tr>
+                        <td>3</td>
+                        <td>Falsafa</td>
+                                                    <td>
+                                                                                                    14.0                                
+                                <a class="showModalButton" value="/education/performance?subject=2208&amp;semester=15&amp;type=11&amp;detail=1" href="#" title="Kunlik baholash" modal-class="modal-small" data-pjax="1"><i class="fa fa-eye-slash"></i></a>                            </td>
+                            <td>
+                                                                                                    14.0                                                                <a class="showModalButton" value="/education/performance?subject=2208&amp;semester=15&amp;type=12&amp;detail=1" href="#" title="Kunlik baholash" modal-class="modal-small" data-pjax="1"><i class="fa fa-eye-slash"></i></a>                            </td>
+                            <td>40.0</td>
+                            <td>68.0</td>
+                        
+                        
+                                            </tr>
+                                    <tr>
+                        <td>5</td>
+                        <td>Ehtimollar nazariyasi va matematik statistika</td>
+                                                <td>
+                                                        16.0                                                        <a class="showModalButton" value="/education/performance?subject=3084&amp;semester=15&amp;type=11&amp;detail=1" href="#" title="Kunlik baholash" modal-class="modal-small" data-pjax="1"><i class="fa fa-eye-slash"></i></a>                        </td>
+                        <td>
+                                                            16.0                                                        <a class="showModalButton" value="/education/performance?subject=3084&amp;semester=15&amp;type=12&amp;detail=1" href="#" title="Kunlik baholash" modal-class="modal-small" data-pjax="1"><i class="fa fa-eye-slash"></i></a>                        </td>
+                        <td>0.0</td>
+                        <td>32.0</td>
+                        
+                        
+                                            </tr>
+                                    <tr>
+                        <td>7</td>
+                        <td>Umumiy pedagogika</td>
+                                                    <td>
+                                                                                                    33.0                                
+                                <a class="showModalButton" value="/education/performance?subject=3094&amp;semester=15&amp;type=11&amp;detail=1" href="#" title="Kunlik baholash" modal-class="modal-small" data-pjax="1"><i class="fa fa-eye-slash"></i></a>                            </td>
+                            <td>
+                                                                                                    0                                                                <a class="showModalButton" value="/education/performance?subject=3094&amp;semester=15&amp;type=12&amp;detail=1" href="#" title="Kunlik baholash" modal-class="modal-small" data-pjax="1"><i class="fa fa-eye-slash"></i></a>                            </td>
+                            <td>44.0</td>
+                            <td>77.0</td>
+                        
+                        
+                                            </tr>
+                                    <tr>
+                        <td>9</td>
+                        <td>Mobil ilovalar yaratish</td>
+                                                    <td>
+                                                                                                    18.0                                
+                                <a class="showModalButton" value="/education/performance?subject=5108&amp;semester=15&amp;type=11&amp;detail=1" href="#" title="Kunlik baholash" modal-class="modal-small" data-pjax="1"><i class="fa fa-eye-slash"></i></a>                            </td>
+                            <td>
+                                                                                                    18.0                                                                <a class="showModalButton" value="/education/performance?subject=5108&amp;semester=15&amp;type=12&amp;detail=1" href="#" title="Kunlik baholash" modal-class="modal-small" data-pjax="1"><i class="fa fa-eye-slash"></i></a>                            </td>
+                            <td>36.0</td>
+                            <td>72.0</td>
+                        
+                        
+                                            </tr>
+                                    <tr>
+                        <td>11</td>
+                        <td>Tizimli dasturlash</td>
+                                                    <td>
+                                                                                                    17.0                                
+                                <a class="showModalButton" value="/education/performance?subject=5192&amp;semester=15&amp;type=11&amp;detail=1" href="#" title="Kunlik baholash" modal-class="modal-small" data-pjax="1"><i class="fa fa-eye-slash"></i></a>                            </td>
+                            <td>
+                                                                                                    17.0                                                                <a class="showModalButton" value="/education/performance?subject=5192&amp;semester=15&amp;type=12&amp;detail=1" href="#" title="Kunlik baholash" modal-class="modal-small" data-pjax="1"><i class="fa fa-eye-slash"></i></a>                            </td>
+                            <td>37.0</td>
+                            <td>71.0</td>
+                        
+                        
+                                            </tr>
+                                    <tr>
+                        <td>13</td>
+                        <td>Umumiy psixologiya</td>
+                                                    <td>
+                                                                                                    31.0                                
+                                <a class="showModalButton" value="/education/performance?subject=7283&amp;semester=15&amp;type=11&amp;detail=1" href="#" title="Kunlik baholash" modal-class="modal-small" data-pjax="1"><i class="fa fa-eye-slash"></i></a>                            </td>
+                            <td>
+                                                                                                    0                                                                <a class="showModalButton" value="/education/performance?subject=7283&amp;semester=15&amp;type=12&amp;detail=1" href="#" title="Kunlik baholash" modal-class="modal-small" data-pjax="1"><i class="fa fa-eye-slash"></i></a>                            </td>
+                            <td>46.0</td>
+                            <td>77.0</td>
+                        
+                        
+                                            </tr>
+                
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="box box-success ">
+        <div class="box-header with-border">
+            <h3 class="box-title ">6-semestr</h3>
+            <div class="box-tools pull-right">
+                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i
+                            class="fa fa-minus"></i>
+                </button>
+            </div>
+        </div>
+        <div class="box-body no-padding">
+            <table class="table table-striped">
+                <thead>
+                                <tr>
+                    <th width="50px"></th>
+                    <th width="50%">Fanlar</th>
+                    <th>JN</th>
+                    <th>ON</th>
+                    <th>YN</th>
+                    <th>Umumiy</th>
+                </tr>
+                </thead>
+                <tbody>
+
+                                                    <tr>
+                        <td>1</td>
+                        <td>Axborot xavfsizligi</td>
+                                                <td>
+                                                        18.0                                                        <a class="showModalButton" value="/education/performance?subject=4955&amp;semester=16&amp;type=11&amp;detail=1" href="#" title="Kunlik baholash" modal-class="modal-small" data-pjax="1"><i class="fa fa-eye-slash"></i></a>                        </td>
+                        <td>
+                                                            18.0                                                        <a class="showModalButton" value="/education/performance?subject=4955&amp;semester=16&amp;type=12&amp;detail=1" href="#" title="Kunlik baholash" modal-class="modal-small" data-pjax="1"><i class="fa fa-eye-slash"></i></a>                        </td>
+                        <td></td>
+                        <td></td>
+                        
+                        
+                                            </tr>
+                                    <tr>
+                        <td>3</td>
+                        <td>Informatika o’qitish metodikasi</td>
+                                                <td>
+                                                        16.0                                                        <a class="showModalButton" value="/education/performance?subject=5044&amp;semester=16&amp;type=11&amp;detail=1" href="#" title="Kunlik baholash" modal-class="modal-small" data-pjax="1"><i class="fa fa-eye-slash"></i></a>                        </td>
+                        <td>
+                                                            16.0                                                        <a class="showModalButton" value="/education/performance?subject=5044&amp;semester=16&amp;type=12&amp;detail=1" href="#" title="Kunlik baholash" modal-class="modal-small" data-pjax="1"><i class="fa fa-eye-slash"></i></a>                        </td>
+                        <td>0.0</td>
+                        <td>32.0</td>
+                        
+                        
+                                            </tr>
+                                    <tr>
+                        <td>5</td>
+                        <td>Kompyuter arxitekturasi va Assembler tili</td>
+                                                    <td>
+                                                                                                    17.0                                
+                                <a class="showModalButton" value="/education/performance?subject=5053&amp;semester=16&amp;type=11&amp;detail=1" href="#" title="Kunlik baholash" modal-class="modal-small" data-pjax="1"><i class="fa fa-eye-slash"></i></a>                            </td>
+                            <td>
+                                                                                                    17.0                                                                <a class="showModalButton" value="/education/performance?subject=5053&amp;semester=16&amp;type=12&amp;detail=1" href="#" title="Kunlik baholash" modal-class="modal-small" data-pjax="1"><i class="fa fa-eye-slash"></i></a>                            </td>
+                            <td>50.0</td>
+                            <td>84.0</td>
+                        
+                        
+                                            </tr>
+                                    <tr>
+                        <td>7</td>
+                        <td>Mobil ilovalar yaratish</td>
+                                                    <td>
+                                                                                                    17.0                                
+                                <a class="showModalButton" value="/education/performance?subject=5108&amp;semester=16&amp;type=11&amp;detail=1" href="#" title="Kunlik baholash" modal-class="modal-small" data-pjax="1"><i class="fa fa-eye-slash"></i></a>                            </td>
+                            <td>
+                                                                                                    17.0                                                                <a class="showModalButton" value="/education/performance?subject=5108&amp;semester=16&amp;type=12&amp;detail=1" href="#" title="Kunlik baholash" modal-class="modal-small" data-pjax="1"><i class="fa fa-eye-slash"></i></a>                            </td>
+                            <td>53.0</td>
+                            <td>87.0</td>
+                        
+                        
+                                            </tr>
+                                    <tr>
+                        <td>9</td>
+                        <td>Operatsion tizimlar</td>
+                                                    <td>
+                                                                                                    17.0                                
+                                <a class="showModalButton" value="/education/performance?subject=5156&amp;semester=16&amp;type=11&amp;detail=1" href="#" title="Kunlik baholash" modal-class="modal-small" data-pjax="1"><i class="fa fa-eye-slash"></i></a>                            </td>
+                            <td>
+                                                                                                    18.0                                                                <a class="showModalButton" value="/education/performance?subject=5156&amp;semester=16&amp;type=12&amp;detail=1" href="#" title="Kunlik baholash" modal-class="modal-small" data-pjax="1"><i class="fa fa-eye-slash"></i></a>                            </td>
+                            <td>45.0</td>
+                            <td>80.0</td>
+                        
+                        
+                                            </tr>
+                                    <tr>
+                        <td>11</td>
+                        <td>Uzluksiz malakaviy amaliyot								</td>
+                                                    <td>
+                                                                                                    0                                
+                                <a class="showModalButton" value="/education/performance?subject=6705&amp;semester=16&amp;type=11&amp;detail=1" href="#" title="Kunlik baholash" modal-class="modal-small" data-pjax="1"><i class="fa fa-eye-slash"></i></a>                            </td>
+                            <td>
+                                                                                                    0                                                                <a class="showModalButton" value="/education/performance?subject=6705&amp;semester=16&amp;type=12&amp;detail=1" href="#" title="Kunlik baholash" modal-class="modal-small" data-pjax="1"><i class="fa fa-eye-slash"></i></a>                            </td>
+                            <td></td>
+                            <td>82.0</td>
+                        
+                        
+                                            </tr>
+                                    <tr>
+                        <td>13</td>
+                        <td>Samarqand tamadduni tarixi </td>
+                                                    <td>
+                                                                                                    37.0                                
+                                <a class="showModalButton" value="/education/performance?subject=7495&amp;semester=16&amp;type=11&amp;detail=1" href="#" title="Kunlik baholash" modal-class="modal-small" data-pjax="1"><i class="fa fa-eye-slash"></i></a>                            </td>
+                            <td>
+                                                                                                    0                                                                <a class="showModalButton" value="/education/performance?subject=7495&amp;semester=16&amp;type=12&amp;detail=1" href="#" title="Kunlik baholash" modal-class="modal-small" data-pjax="1"><i class="fa fa-eye-slash"></i></a>                            </td>
+                            <td>50.0</td>
+                            <td>87.0</td>
+                        
+                        
+                                            </tr>
+                                    <tr>
+                        <td>15</td>
+                        <td>UML tilida vizual modellashtirish</td>
+                                                <td>
+                                                        16.0                                                        <a class="showModalButton" value="/education/performance?subject=7940&amp;semester=16&amp;type=11&amp;detail=1" href="#" title="Kunlik baholash" modal-class="modal-small" data-pjax="1"><i class="fa fa-eye-slash"></i></a>                        </td>
+                        <td>
+                                                            18.0                                                        <a class="showModalButton" value="/education/performance?subject=7940&amp;semester=16&amp;type=12&amp;detail=1" href="#" title="Kunlik baholash" modal-class="modal-small" data-pjax="1"><i class="fa fa-eye-slash"></i></a>                        </td>
+                        <td></td>
+                        <td></td>
+                        
+                        
+                                            </tr>
+                                    <tr>
+                        <td>17</td>
+                        <td>Kurs ishi: Mobil ilovalarni yaratish</td>
+                                                    <td>
+                                                                                                    0                                
+                                <a class="showModalButton" value="/education/performance?subject=7941&amp;semester=16&amp;type=11&amp;detail=1" href="#" title="Kunlik baholash" modal-class="modal-small" data-pjax="1"><i class="fa fa-eye-slash"></i></a>                            </td>
+                            <td>
+                                                                                                    0                                                                <a class="showModalButton" value="/education/performance?subject=7941&amp;semester=16&amp;type=12&amp;detail=1" href="#" title="Kunlik baholash" modal-class="modal-small" data-pjax="1"><i class="fa fa-eye-slash"></i></a>                            </td>
+                            <td></td>
+                            <td>74.0</td>
+                        
+                        
+                                            </tr>
+                
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</div>    </section>
+</div>
+
+<footer class="main-footer">
+    <div class="hidden-xs">
+        <b>Dastur versiyasi</b> 0.8.17.12 /
+        <b>Yadro</b> 2.0.41.1 /
+        <b>Sana</b> 12.07.2023 21:28:54    </div>
+</footer>
+    </div>
+    <script src="/assets/b7ece56d/js/jquery.js?v=1606135931"></script>
+<script src="/assets/a039600/yii.js?v=1614872704"></script>
+<script src="/assets/eebed8da/jquery.pjax.js?v=1507803074"></script>
+<script src="/assets/56d1e3dc/jquery-ui.js?v=1474004875"></script>
+<script src="/assets/1619872/js/bootstrap.js?v=1550073338"></script>
+<script src="/assets/9e70574f/theia-sticky-sidebar/dist/theia-sticky-sidebar.min.js?v=1493119854"></script>
+<script src="/assets/7ea02d8/plugins/iCheck/icheck.min.js?v=1567066820"></script>
+<script src="/assets/7ea02d8/dist/js/adminlte.min.js?v=1567066820"></script>
+<script src="/assets/e3719058/src/0.1.4/js/checkBo.min.js?v=1465721329"></script>
+<script src="/assets/59c3df43/toastr.min.js?v=1439176619"></script>
+<script src="/assets/b7ece56d/js/ajax-modal-popup.js?v=1619656583"></script>
+<script src="/assets/b7ece56d/js/jquery.floatThead.min.js?v=1663263657"></script>
+<script src="/assets/b7ece56d/js/jquery.formatter.min.js?v=1598295197"></script>
+<script src="/assets/b7ece56d/js/scripts.js?v=1681793061"></script>
+<script src="/assets/b7ece56d/js/js.cookie.js?v=1598295197"></script>
+<script src="/assets/78290ccb/js/front.js?v=1610394489"></script>
+<script>jQuery(function ($) {
+jQuery(document).pjax("#admin-grid a", {"push":false,"replace":false,"timeout":false,"scrollTo":false,"container":"#admin-grid"});
+jQuery(document).off("submit", "#admin-grid form[data-pjax]").on("submit", "#admin-grid form[data-pjax]", function (event) {jQuery.pjax.submit(event, {"push":false,"replace":false,"timeout":false,"scrollTo":false,"container":"#admin-grid"});});
+jQuery('#modal').modal({"show":false,"keyboard":true});
+});</script>    </body>
+    </html>
