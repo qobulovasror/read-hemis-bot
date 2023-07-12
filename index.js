@@ -5,20 +5,20 @@ const fs = require('fs');
 const config = require('config')
 const TelegramBot = require('node-telegram-bot-api');
 
-const bot = new TelegramBot(config.get('botTokenKey'), { polling: true });
+const bot = new TelegramBot(config.get('botToken'), { polling: true });
 
 const refresh = async ()=>{
     let data = qs.stringify({
-      '_frontendUser': config.get('userCookieKey') 
+      '_frontendUser': config.get('userCookie') 
     });
     let config = {
       method: 'get',
       maxBodyLength: Infinity,
-      url: config.get('urlKey'),
+      url: config.get('url'),
       headers: { 
-        '_frontendUser': config.get('userCookieKey'), 
+        '_frontendUser': config.get('userCookie'), 
         'Content-Type': 'application/x-www-form-urlencoded', 
-        'Cookie': config.get('cookieKey')
+        'Cookie': config.get('cookie')
       },
       data : data
     };
@@ -71,5 +71,5 @@ function sendMessageToUser(chatId, message) {
   
 
 const alert = (msg)=>{
-    sendMessageToUser( config.get('chatiDKey'), msg);
+    sendMessageToUser( config.get('chatiD'), msg);
 }
