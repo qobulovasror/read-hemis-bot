@@ -32,11 +32,11 @@ const refresh = async ()=>{
                 if(data==table){
                     let date = new Date()
                     let data = date.toLocaleDateString() + '-' + date.getHours()+':'+date.getMinutes()+':'+date.getSeconds()+'\n';
-                    fs.appendFile('./date.txt', data, function (err) {
+                    fs.appendFile('./assets/date.txt', data, function (err) {
                         if(err) errWrite(err)
                       });
                 }else{
-                    fs.writeFile('./text.txt', table, 'utf-8', (err)=>{
+                    fs.writeFile('./assets/text.txt', table, 'utf-8', (err)=>{
                         if(err) errWrite(err)
                     })
                     alert(table)
@@ -54,7 +54,7 @@ const refresh = async ()=>{
 setInterval(refresh,  30000)
 
 const errWrite = async (err)=> {
-    fs.appendFile('./err.txt',err+'\n', function (err) {
+    fs.appendFile('./assets/err.txt',err+'\n', function (err) {
         if(err) console.log(err);
     });
 }
