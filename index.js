@@ -9,25 +9,24 @@ const bot = new TelegramBot(config.get('botToken'), { polling: true });
 
 const refresh = async ()=>{
     let data = qs.stringify({
-      '_frontendUser': config.get('userCookie') 
+      '_frontendUser': config.get("userCookie") 
     });
-    let config = {
+    axios.request({
       method: 'get',
       maxBodyLength: Infinity,
       url: config.get('url'),
       headers: { 
-        '_frontendUser': config.get('userCookie'), 
+        '_frontendUser': config.get("userCookie"), 
         'Content-Type': 'application/x-www-form-urlencoded', 
         'Cookie': config.get('cookie')
       },
       data : data
-    };
-    axios.request(config)
+    })
     .then((response) => {
         const $ = cheerio.load(response.data);
         let table = $('table.table.table-striped').text().split('Fanlar')[6]
         table = table.toString().replaceAll(/\n/g, "").replaceAll(' ', '');
-        fs.readFile('./text.txt', 'utf-8', (err, data)=>{
+        fs.readFile('./assets/text.txt', 'utf-8', (err, data)=>{
             if(!err){
                 if(data==table){
                     let date = new Date()
@@ -50,8 +49,8 @@ const refresh = async ()=>{
         if(err) errWrite(err)
     });
 }
-// setInterval(refresh,  180000)
-setInterval(refresh,  30000)
+setInterval(refresh,  180000)
+// setInterval(refresh,  5000)
 
 const errWrite = async (err)=> {
     fs.appendFile('./assets/err.txt',err+'\n', function (err) {
